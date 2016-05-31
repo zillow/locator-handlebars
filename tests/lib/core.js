@@ -23,9 +23,9 @@ describe('locator-handlebars', function () {
         it('partials', function () {
             var source = libfs.readFileSync(fixturesPath + '/testfile.handlebars', 'utf8'),
                 result = new Plugin().partialsParser(source);
-            expect(result[0]).to.equal('baz');
-            expect(result[1]).to.equal('abcd');
-            expect(result[2]).to.equal('efgh');
+            expect(result[0]).to.equal('dir/baz');
+            expect(result[1]).to.equal('dir/abcd');
+            expect(result[2]).to.equal('dir/efgh');
         });
 
         it('partialsdefault', function () {

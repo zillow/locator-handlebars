@@ -71,13 +71,13 @@ describe('locator-handlebars', function () {
                 filecall += 1;
                 expect(bundleName).to.equal("testing");
                 expect(relativePath).to.equal("testing-tmpl-testfile.js");
-                expect(contents.substring(0, 195)).to.equal([
+                expect(contents.substring(0, 207)).to.equal([
                     "// @module testing-tmpl-testfile",
                     "import 'template-base';",
                     "import 'handlebars-base';",
-                    "import 'testing-tmpl-baz';",
-                    "import 'testing-tmpl-abcd';",
-                    "import 'testing-tmpl-efgh';",
+                    "import 'testing-tmpl-dir-baz';",
+                    "import 'testing-tmpl-dir-abcd';",
+                    "import 'testing-tmpl-dir-efgh';",
                     "import Y from 'yui-instance';"
                 ].join('\n'));
                 return new libpromise.Promise(function (fulfill, reject) {

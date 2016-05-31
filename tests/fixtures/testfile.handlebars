@@ -6,12 +6,12 @@
 <body>
     <h1>partial `baz` rendered at the client side: </h1>
 
-    <div id="barclient">{{>baz}}</div>
+    <div id="barclient">{{> dir/baz}}</div>
 
     {{#if people}}
-	    {{>abcd}}
+	    {{> dir/abcd}}
 	{{else}}
-	    {{>efgh}}
+	    {{> dir/efgh}}
 	{{/if}}
 </body>
 </html>
